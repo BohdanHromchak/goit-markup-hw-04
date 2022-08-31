@@ -165,6 +165,11 @@ img {
   text-align: center;
 
   background-color: var(--secondary-background-color);
+  background-image: url(../images/hero-img.jpeg);
+
+  background-size: 1600px;
+  background-position: 50% 50%;
+  
 }
 .hero-title {
   width: 696px;
