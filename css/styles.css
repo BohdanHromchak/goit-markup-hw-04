@@ -10,6 +10,7 @@
   --secondary-text-color: #757575;
   --border-color: #eeeeee;
   --header-border-bottom: #ececec;
+  --icon-fill: #AFB1B8;
 }
 
 body {
@@ -165,11 +166,10 @@ img {
   text-align: center;
 
   background-color: var(--secondary-background-color);
-  background-image: url(../images/hero-img.jpeg);
+  background-image: url(../images/hero-img.jpeg), linear-gradient(to right, #2f303a66, #2f303a66);
 
   background-size: 1600px;
   background-position: 50% 50%;
-  
 }
 .hero-title {
   width: 696px;
@@ -263,7 +263,7 @@ img {
   display: flex;
 }
 .member-caption {
-  padding: 30px 0;
+  padding: 30px 0 16px;
 }
 .team-member-name {
   margin-bottom: 10px;
@@ -282,6 +282,32 @@ img {
   color: var(--secondary-text-color);
 }
 
+.socials {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+
+  color: var(--icon-fill);
+}
+.socials-link:hover, .socials-link:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+.socials-icon {
+  fill: currentColor;
+}
 /* portfolio.html */
 .site-button {
   display: flex;
