@@ -10,7 +10,7 @@
   --secondary-text-color: #757575;
   --border-color: #eeeeee;
   --header-border-bottom: #ececec;
-  --icon-fill: #AFB1B8;
+  --icon-fill: #afb1b8;
 }
 
 body {
@@ -108,7 +108,14 @@ img {
 .header-link-nav.current {
   color: var(--accent-color);
 }
-
+.header-link-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.contacts-icon {
+  fill: currentColor;
+}
 /* Футер */
 .page-footer {
   margin: 0 auto;
@@ -300,7 +307,8 @@ img {
 
   color: var(--icon-fill);
 }
-.socials-link:hover, .socials-link:focus {
+.socials-link:hover,
+.socials-link:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
